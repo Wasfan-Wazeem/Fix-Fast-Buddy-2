@@ -24,17 +24,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/userProfile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/garage_mechanic_profile"
-            android:layout_marginStart="12dp"
-            android:padding="8dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mechanicImageSIV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_picture"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:shapeAppearanceOverlay="@style/circularShape"
+            app:strokeColor="@color/pallete_4"
+            app:strokeWidth="2dp" />
 
         <TextView
             android:id="@+id/name"
