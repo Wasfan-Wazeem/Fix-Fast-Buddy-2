@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Garage.RatingsPage">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="384dp"
+      android:background="@drawable/garage_gradient_background"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="2dp"
+      tools:layout_editor_absoluteY="1dp" />
+
+  <ImageView
+      android:id="@+id/backbutton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/garage_backbutton"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="30dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+
+  <TextView
+      android:layout_width="367dp"
+      android:layout_height="50dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="100dp"
+      android:fontFamily="times"
+      android:gravity="top"
+      android:text="My Ratings and Reviews"
+      android:textColor="@color/white"
+      android:textSize="30sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints" />
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="200dp"
+      android:fontFamily="times"
+      android:gravity="top"
+      android:text="4.5"
+      android:textColor="@color/dark_blue"
+      android:textSize="95sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints" />
+
+  <RatingBar
+      android:id="@+id/ratingBar"
+      style="?android:attr/ratingBarStyleSmall"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="60dp"
+      android:layout_marginTop="320dp"
+      android:numStars="5"
+      android:rating="4"
+      android:stepSize="1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints" />
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerViewRatings"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="400dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.5"
+      tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

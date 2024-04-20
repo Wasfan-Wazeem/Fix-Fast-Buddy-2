@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Garage.HomeFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:background="@drawable/garage_gradient_background"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:layout_width="184dp"
+        android:layout_height="32dp"
+        android:text="Hi, ABC Garage!"
+        android:textColor="#112D4E"
+        android:textSize="20dp"
+        android:fontFamily="times"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"/>
+    <View
+        android:layout_width="380dp"
+        android:layout_height="36dp"
+        android:background="@drawable/garage_homebox_ongoing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp">
+    </View>
+    <TextView
+        android:layout_width="184dp"
+        android:layout_height="32dp"
+        android:text="ONGOING ACTIVITIES"
+        android:textColor="#3F72AF"
+        android:textSize="17dp"
+        android:fontFamily="times"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="136dp">
+    </TextView>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/homeViewPager"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:layout_marginTop="-200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="36dp"
+        android:background="@drawable/garage_homebox_maintenance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="470dp">
+    </View>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="32dp"
+        android:text="MAINTENANCE SERVICES"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:fontFamily="times"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="476dp">
+    </TextView>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/homeViewPager2"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

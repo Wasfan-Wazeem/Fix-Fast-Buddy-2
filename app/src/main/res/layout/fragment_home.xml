@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    tools:context=".mechanic.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="400dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+            <ImageView
+                android:layout_width="325dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:contentDescription="@string/line"
+                android:src="@drawable/line_6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="@string/ongoing_eme"
+                android:textColor="#3876C1"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/man" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:gravity="center_horizontal"
+                android:text="@string/user"
+                android:textColor="#3876C1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="95dp"
+                android:text="@string/_94_77_123_4567"
+                android:textColor="#3876C1"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/Grey"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="125dp"
+                android:text="@string/vehicle" />
+
+            <TextView
+                style="@style/Black"
+                android:layout_height="83dp"
+                android:layout_marginStart="178dp"
+                android:layout_marginTop="125dp"
+                android:text="@string/bmw_539_nwb_o2k_1717" />
+
+            <TextView
+                style="@style/Grey"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="165dp"
+                android:text="@string/distance" />
+
+
+            <TextView
+                style="@style/Grey"
+                android:layout_marginTop="165dp"
+                android:gravity="center_horizontal"
+                android:text="@string/inspection_travel" />
+
+
+            <TextView
+                style="@style/Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="165dp"
+                android:layout_marginEnd="25dp"
+                android:text="@string/problem" />
+
+
+            <TextView
+                style="@style/Black"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="180dp"
+                android:text="@string/_500m" />
+
+
+            <TextView
+                style="@style/Black"
+                android:layout_marginTop="180dp"
+                android:gravity="center_horizontal"
+                android:text="@string/rs_200" />
+
+            <TextView
+                style="@style/Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="180dp"
+                android:layout_marginEnd="35dp"
+                android:text="@string/tire" />
+
+            <Button
+                android:id="@+id/acc_btn"
+                android:layout_width="112dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="40dp"
+                android:onClick="onCTAButtonClick"
+                android:text="Track"
+                tools:ignore="TouchTargetSizeWarning"/>
+
+            <ImageButton
+                android:id="@+id/call"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="80dp"
+                android:contentDescription="@string/call_button"
+                android:src="@drawable/call" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="195dp"
+            android:contentDescription="@string/notifications"
+            android:src="@drawable/ringing_bell"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="@string/u"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_online_offline"
+            tools:ignore="MissingConstraints" />
+
+        <Switch
+            android:id="@+id/switch_online_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:thumb="@drawable/spanner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewHome"
+            android:layout_width="405dp"
+            android:layout_height="425dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

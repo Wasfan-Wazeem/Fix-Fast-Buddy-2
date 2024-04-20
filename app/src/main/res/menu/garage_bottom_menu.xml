@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/garage_home_filled"/>
+    <item
+            android:id="@+id/bottom_activities"
+            android:title="Activities"
+            android:icon="@drawable/garage_tasks_app_20_filled"/>
+    <item
+            android:id="@+id/bottom_maintenance"
+            android:title="Maintenance"
+            android:icon="@drawable/garage_maintenance"/>
+
+    <item
+            android:id="@+id/bottom_profile"
+            android:title="Profile"
+            android:icon="@drawable/garage_profile_circle_fill"
+            />
+
+
+</menu>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="257dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/garage_gradient_background"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/userProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/garage_mechanic_profile"
+            android:layout_marginStart="12dp"
+            android:padding="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saman Perera"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/contactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+94 77 123 4567 "
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/msgbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/garage_msg"
+            android:padding="8dp"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/phonebtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/garage_phone"
+            android:padding="8dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle : "
+            android:textColor="@color/ash_color"
+            android:textSize="17dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/vehicleVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMW - 539 "
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="82dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service_ID  "
+            android:textColor="@color/ash_color"
+            android:textSize="17dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="115dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/serviceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S001  "
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="116dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023-05-23"
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="116dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15:25:23"
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="135dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/problem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problem  "
+            android:textColor="@color/ash_color"
+            android:textSize="17dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="135dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/problemVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Split Tire"
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="135dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/addressVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32, Galle Road, Colombo 04"
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="176dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repair Address  "
+            android:textColor="@color/ash_color"
+            android:textSize="17dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cost  "
+            android:textColor="@color/ash_color"
+            android:textSize="17dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="200dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/totalCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 500"
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="201dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <View
+            android:id="@+id/statusbar"
+            android:layout_width="202dp"
+            android:layout_height="22dp"
+            android:background="@drawable/garage_ongoing_statusbar"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="230dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status "
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="230dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

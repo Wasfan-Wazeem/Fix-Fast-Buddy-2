@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Garage.MaintenanceFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="384dp"
+    android:background="@drawable/garage_gradient_background"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:layout_width="367dp"
+        android:layout_height="50dp"
+        android:text="Maintenance Services"
+        android:textColor="@color/white"
+        android:fontFamily="times"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:gravity="top"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"/>
+
+</FrameLayout>

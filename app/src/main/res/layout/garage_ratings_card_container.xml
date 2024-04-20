@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="390dp"
+    android:layout_height="170dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4"
+            android:stepSize="1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            style="?android:attr/ratingBarStyleSmall"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/ratingCardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saman Perera "
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/ratingCardDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25/08/2023"
+            android:textColor="@color/ash_color"
+            android:textSize="15dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/ratingCardComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent Service.Efficient, fast and friendly.
+                   Best of Luck!"
+            android:textColor="@color/ash_color"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="110dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
