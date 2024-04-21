@@ -1,29 +1,37 @@
 package com.wasfan.fixfastbuddy2.mechanic.AdapterClass
 
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
-import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.wasfan.fixfastbuddy2.R
-import com.wasfan.fixfastbuddy2.mechanic.CompletedTask
-import com.wasfan.fixfastbuddy2.mechanic.DetailDialogFragment
+import com.wasfan.fixfastbuddy2.mechanic.DataClass.CompletedDataClass
 
-class CompletedTaskAdapter(private val tasks: List<CompletedTask>,private val fragmentManager: FragmentManager):RecyclerView.Adapter<CompletedTaskAdapter.MyViewHolder>() {
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
+class CompletedTaskAdapter(private val tasks: ArrayList<CompletedDataClass>)/*,private val fragmentManager: FragmentManager)*/ :
+RecyclerView.Adapter<CompletedTaskAdapter.MyViewHolder>() {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int
     ): CompletedTaskAdapter.MyViewHolder {
-        val itemView =
-            LayoutInflater.from(parent.context).inflate(R.layout.complete_task_item, parent, false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list_item_completed, parent, false)
         return MyViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val task = tasks[position]
-        holder.bind(task)
+//        val task = tasks[position]
+//        holder.bind(task)
+        val currentItem = tasks[position]
+        holder.image.setImageResource(currentItem.image)
+        holder.serviceID.text = currentItem.serviceID
+        holder.serviceType.text = currentItem.serviceType
+        holder.vehicleNum.text = currentItem.vehicleNum
+        holder.address.text = currentItem.address
+        holder.date.text = currentItem.date
+//        holder.time.text = currentItem.time
+        holder.completedAmount.text = currentItem.completedAmount
+
+
 
     }
     override fun getItemCount(): Int {
@@ -31,36 +39,15 @@ class CompletedTaskAdapter(private val tasks: List<CompletedTask>,private val fr
     }
 
 
-    inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val name: TextView = itemView.findViewById(R.id.tv_name)
-        private val task: TextView = itemView.findViewById(R.id.tv_task)
-        private val date: TextView = itemView.findViewById(R.id.tv_date)
-        private val detailButton: TextView = itemView.findViewById(R.id.btn_detail)
-
-
-        fun bind(completedTask : CompletedTask){
-            name.text = completedTask.name
-            task.text = completedTask.task
-            date.text = completedTask.date
-
-            // Set click listener for the detail button
-            detailButton.setOnClickListener {
-                val detailDialogFragment = DetailDialogFragment()
-                detailDialogFragment.show(fragmentManager, "DetailDialogFragment")
-
-                // Create a bundle to pass data to the dialog fragment
-                val bundle = Bundle()
-                bundle.putString("name", completedTask.name)
-                bundle.putString("date", completedTask.date)
-                bundle.putString("task", completedTask.task)
-
-                // Set the arguments for the dialog fragment
-                detailDialogFragment.arguments = bundle
-
-
-            }
-        }
-
+    /*inner*/ class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+         val image: ImageView = itemView.findViewById(R.id.completedImage)
+         val serviceID: TextView = itemView.findViewById(R.id.completedServiceID)
+         val serviceType: TextView = itemView.findViewById(R.id.completedServiceType)
+         val vehicleNum: TextView = itemView.findViewById(R.id.completedVehicle)
+         val address: TextView = itemView.findViewById(R.id.completedAddress)
+         val date: TextView = itemView.findViewById(R.id.completedDate)
+        // /private/ val time: TextView = itemView.findViewById(R.id.completedVehicle)
+        val completedAmount: TextView = itemView.findViewById(R.id.completedAmount)
 
     }
 }

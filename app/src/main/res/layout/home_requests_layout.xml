@@ -16,7 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@drawable/garage_gradient_background"
-        android:backgroundTint=""
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="2dp"
         tools:layout_editor_absoluteY="1dp" />

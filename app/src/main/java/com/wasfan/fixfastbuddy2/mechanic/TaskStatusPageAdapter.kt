@@ -1,9 +1,12 @@
-package com.wasfan.fixfastbuddy2.mechanic
+package com.wasfan.fixfastbuddy2.mechanic.AdapterClass
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.wasfan.fixfastbuddy2.mechanic.cancelled
+import com.wasfan.fixfastbuddy2.mechanic.completed
+import com.wasfan.fixfastbuddy2.mechanic.ongoing
 
 class TaskStatusPageAdapter(
     fragmentManager: FragmentManager,

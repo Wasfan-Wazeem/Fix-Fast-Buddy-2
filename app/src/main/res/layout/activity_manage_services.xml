@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,7 +7,7 @@
     android:background="@drawable/bg"
     tools:context=".mechanic.manageServices">
 
-    <ImageButton
+    <ImageView
         android:id="@+id/backBtn3"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -17,11 +16,11 @@
         android:background="@drawable/back_button_circle_shape"
         android:clickable="true"
         android:contentDescription="@string/back_button"
+        android:focusable="true"
         android:src="@drawable/profile_back_arrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSize,TouchTargetSizeCheck"
-        android:focusable="true" />
+        tools:ignore="TouchTargetSize,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView7"
@@ -35,15 +34,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/backBtn3" />
 
-    <View
+    <ImageView
         android:id="@+id/rectangle_"
         android:layout_width="390dp"
-        android:layout_height="64dp"
+        android:layout_height="0dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="152dp"
+        android:layout_marginBottom="486dp"
         android:background="#3F72AF"
+        app:layout_constraintBottom_toTopOf="@+id/EditMS"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,15 +63,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="317dp"
-        android:layout_marginBottom="54dp"
-        android:src="@drawable/edit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:id="@+id/editMS"/>
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="317dp"-->
+    <!--        android:layout_marginBottom="54dp"-->
+    <!--        android:src="@drawable/edit"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:id="@+id/editMS"/>-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/mngservices_rv"
@@ -80,5 +81,18 @@
         android:layout_marginTop="240dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/EditMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_"
+        app:layout_constraintVertical_bias="0.994"
+        app:srcCompat="@drawable/edit"
+        android:contentDescription="edit button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

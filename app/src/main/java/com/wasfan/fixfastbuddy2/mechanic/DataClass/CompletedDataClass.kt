@@ -7,6 +7,6 @@ data class CompletedDataClass(
     var vehicleNum: String,
     var address: String,
     var date: String,
-    var time: String,
+    //var time: String,
     var completedAmount: String,
 )

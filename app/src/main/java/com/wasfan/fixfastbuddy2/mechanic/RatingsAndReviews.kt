@@ -1,6 +1,5 @@
 package com.wasfan.fixfastbuddy2.mechanic
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +19,6 @@ class RatingsAndReviews : AppCompatActivity() {
     lateinit var Date:Array<String>
     lateinit var Review:Array<String>
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ratings_and_reviews)

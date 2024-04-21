@@ -43,4 +43,6 @@ interface RetrofitAPI {
         @Query("lng") longitude: Double,
         @Query("radius") radius: Double
     ): Call<NearbyServiceRequestResponseDataClass>
+
+
 }

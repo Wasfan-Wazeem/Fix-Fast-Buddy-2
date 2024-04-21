@@ -1,8 +1,6 @@
 package com.wasfan.fixfastbuddy2.mechanic.DataClass
 
 data class CancelledTask  (
-    val name: String,
-    val date: String,
-    val task: String,
-    val reason : String
+    var dataDate: String,
+    var dataServiceID : String,  var dataName : String, var dataProblem : String
 )

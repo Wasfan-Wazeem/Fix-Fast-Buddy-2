@@ -7,23 +7,21 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 
 
 
-    class ActivitiesFragmentPageAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle)
-        : FragmentStateAdapter(fragmentManager, lifecycle) {
+class ActivitiesFragmentPageAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle)
+    : FragmentStateAdapter(fragmentManager, lifecycle) {
 
-        override fun getItemCount(): Int {
-            return 3
+    override fun getItemCount(): Int {
+        return 3
+    }
+
+    override fun createFragment(position: Int): Fragment {
+        return when (position) {
+            0 -> ongoing()
+            1 -> completed()
+            2 -> cancelled()
+            else -> throw IllegalArgumentException("Invalid position")
         }
-
-        override fun createFragment(position: Int): Fragment {
-            return when (position) {
-                0 -> ongoing()
-                1 -> completed()
-                2 -> cancelled()
-                else -> throw IllegalArgumentException("Invalid position")
-            }
-        }
-
-
     }
 
 
+}

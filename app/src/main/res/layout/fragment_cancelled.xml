@@ -6,25 +6,20 @@
     tools:context="mechanic.cancelled"
     android:background="@color/white">
 
-<!--&lt;!&ndash;    <androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:id="@+id/recycler_completed"&ndash;&gt;-->
-<!--&lt;!&ndash;        tools:listitem="@layout/list_item_cancelled"/>&ndash;&gt;-->
-
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/recycler_cancelled"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:paddingTop="10dp"/>-->
-
-
-<!--</FrameLayout>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:background="@drawable/bg"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="1dp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvCancelled"
+        android:id="@+id/recyclerViewCancel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"/>
+
+
+
 
 </FrameLayout>
